@@ -2,7 +2,7 @@
   "name": "notify",
   "displayName": "Notify",
   "description": "Send custom notifications from shortcuts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/mskelton/vscode-notify"
@@ -17,6 +17,10 @@
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
+  "files": [
+    "out/**/*",
+    "LICENSE"
+  ],
   "contributes": {
     "commands": [
       {
