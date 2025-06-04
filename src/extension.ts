@@ -7,7 +7,7 @@ interface NotificationArgs {
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
-    'vscode-notify.sendNotification',
+    'notify.sendNotification',
     (args: NotificationArgs) => {
       if (!args || !args.message) {
         vscode.window.showErrorMessage(

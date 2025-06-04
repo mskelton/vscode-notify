@@ -23,7 +23,7 @@ Add custom keybindings to your `keybindings.json`:
 ```json
 {
   "key": "cmd+shift+n",
-  "command": "vscode-notify.sendNotification",
+  "command": "notify.sendNotification",
   "args": {
     "message": "Your custom message here",
     "type": "info"
@@ -45,7 +45,7 @@ Add custom keybindings to your `keybindings.json`:
 // Info notification
 {
   "key": "cmd+alt+i",
-  "command": "vscode-notify.sendNotification",
+  "command": "notify.sendNotification",
   "args": {
     "message": "Build completed successfully!",
     "type": "info"
@@ -55,7 +55,7 @@ Add custom keybindings to your `keybindings.json`:
 // Warning notification
 {
   "key": "cmd+alt+w",
-  "command": "vscode-notify.sendNotification",
+  "command": "notify.sendNotification",
   "args": {
     "message": "This is a warning message",
     "type": "warning"
@@ -65,7 +65,7 @@ Add custom keybindings to your `keybindings.json`:
 // Error notification
 {
   "key": "cmd+alt+e",
-  "command": "vscode-notify.sendNotification",
+  "command": "notify.sendNotification",
   "args": {
     "message": "Something went wrong!",
     "type": "error"
@@ -79,7 +79,7 @@ Add custom keybindings to your `keybindings.json`:
 
 1. Download the `.vsix` file
 2. Install via Command Palette: "Extensions: Install from VSIX..."
-3. Or use CLI: `code --install-extension vscode-notify-0.0.1.vsix`
+3. Or use CLI: `code --install-extension notify-0.0.1.vsix`
 
 ### Development
 
@@ -87,7 +87,3 @@ Add custom keybindings to your `keybindings.json`:
 2. Run `npm install`
 3. Press `F5` to launch Extension Development Host
 4. Test the extension in the new VS Code window
-
-## License
-
-MIT
