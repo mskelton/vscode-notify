@@ -17,8 +17,10 @@
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
+  "icon": "resources/icon.png",
   "files": [
     "out/**/*",
+    "resources/**/*",
     "LICENSE"
   ],
   "contributes": {
