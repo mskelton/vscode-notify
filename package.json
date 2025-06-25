@@ -36,13 +36,15 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "fmt": "prettier --write \"src/**/*.ts\"",
-    "package": "vsce package"
+    "lint": "eslint .",
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check ."
   },
   "devDependencies": {
+    "@mskelton/eslint-config": "^9.2.0",
     "@types/node": "^22.15.17",
     "@types/vscode": "^1.60.0",
-    "@vscode/vsce": "^3.3.2",
+    "eslint": "^9.29.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   }

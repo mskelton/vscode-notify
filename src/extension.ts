@@ -2,11 +2,11 @@ import * as vscode from 'vscode'
 
 interface NotificationArgs {
   message: string
-  type?: 'info' | 'warning' | 'error'
+  type?: 'error' | 'info' | 'warning'
 }
 
 export function activate(context: vscode.ExtensionContext) {
-  let disposable = vscode.commands.registerCommand(
+  const disposable = vscode.commands.registerCommand(
     'notify.sendNotification',
     (args: NotificationArgs) => {
       if (!args || !args.message) {
