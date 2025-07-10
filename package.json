@@ -23,15 +23,6 @@
     "resources/**/*",
     "LICENSE"
   ],
-  "contributes": {
-    "commands": [
-      {
-        "command": "notify.sendNotification",
-        "category": "Notify",
-        "title": "Send Notification"
-      }
-    ]
-  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
