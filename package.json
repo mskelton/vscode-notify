@@ -15,7 +15,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:notify.sendNotification"
+  ],
   "main": "./out/extension.js",
   "icon": "resources/icon.png",
   "files": [
